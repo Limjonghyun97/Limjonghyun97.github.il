@@ -100,7 +100,7 @@ const bookSearch = new Project(
     "/booksearch",
     "/resources/images/booksearch.jpg",
     "Book Search",
-    "Book Search and Inquiry Service",
+    "카카오 Search API를 이용한 책 찾는 웹페이지",
     ['VanilaJS', 'jQeury', 'Kakao Search API'],
     ['2023.03.14', "2023.03.14"]
 );
@@ -111,7 +111,7 @@ const omok = new Project(
     "/omok",
     "/resources/images/omok.jpg",
     "omok",
-    "omok game",
+    "JS, jQeury를 이용한 omok 게임",
     ['VanilaJS', 'jQeury', 'CSS', 'HTML'],
     ['2023.03.12', "2023.03.12"]
 );
