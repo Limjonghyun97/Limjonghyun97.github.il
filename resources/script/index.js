@@ -102,18 +102,18 @@ const bookSearch = new Project(
     "Book Search",
     "Book Search and Inquiry Service",
     ['VanilaJS', 'jQeury', 'Kakao Search API'],
-    ['2023.03.12', "2023.03.14"]
+    ['2023.03.14', "2023.03.14"]
 );
 
 addProject(bookSearch, "frontend", "contain", "center");
 
 const omok = new Project(
     "/omok",
-    "/resources/images/omok.png",
+    "/resources/images/omok.jpg",
     "omok",
     "omok game",
-    ['VanilaJS', 'jQeury', 'Kakao Search API'],
-    ['2023.03.09', "2023.03.12"]
+    ['VanilaJS', 'jQeury', 'CSS', 'HTML'],
+    ['2023.03.12', "2023.03.12"]
 );
 
 addProject(omok, "frontend", "contain", "center");
