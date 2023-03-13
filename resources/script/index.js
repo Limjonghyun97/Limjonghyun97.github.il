@@ -96,17 +96,6 @@ const sample = new Project(
 addProject(sample, "frontend", "cover", "center");
 */
 
-const bookSearch = new Project(
-    "/booksearch",
-    "/resources/images/booksearch.jpg",
-    "Book Search",
-    "카카오 Search API를 이용한 책 찾는 웹페이지",
-    ['VanilaJS', 'jQeury', 'Kakao Search API'],
-    ['2023.03.14', "2023.03.14"]
-);
-
-addProject(bookSearch, "frontend", "contain", "center");
-
 const omok = new Project(
     "/omok",
     "/resources/images/omok.jpg",
@@ -117,3 +106,14 @@ const omok = new Project(
 );
 
 addProject(omok, "frontend", "contain", "center");
+
+const bookSearch = new Project(
+    "/booksearch",
+    "/resources/images/booksearch.jpg",
+    "Book Search",
+    "카카오 Search API를 이용한 책 찾는 웹페이지",
+    ['VanilaJS', 'jQeury', 'Kakao Search API'],
+    ['2023.03.14', "2023.03.14"]
+);
+
+addProject(bookSearch, "frontend", "contain", "center");
