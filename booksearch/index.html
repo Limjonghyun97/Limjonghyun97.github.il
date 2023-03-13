@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,16 @@
     <title>Book Search</title>
     <link rel="stylesheet" href="book.css">
 </head>
+
 <body>
-    <h1>Book Search</h1>
-    <form class="search-box">
-        <input class="query" type="text">
-        <input type="submit" value="search" placeholder="검색할 책 제목 입력" autofocus>
-    </form>
-    <div class="container">
-        <!-- <div class="result-card">
+    <div id="map">
+        <h1>Book Search</h1>
+        <form class="search-box">
+            <input class="query" type="text">
+            <input type="submit" value="search" placeholder="검색할 책 제목 입력" autofocus>
+        </form>
+        <div class="container">
+            <!-- <div class="result-card">
             <img class="book-img" src="/book.png">
             <h4 class="book-title">title</h4>
             <p class="book-description">도서상세정보</p>
@@ -24,7 +27,10 @@
                 <span class="author">저자</span>|<span class="publisher">출판사</span>
             </p>
         </div> -->
+        </div>
+        <input class="moreBtn" type="button" value="more" onclick="moreBtn()">
     </div>
     <script type="text/javascript" src="book.js"></script>
 </body>
+
 </html>

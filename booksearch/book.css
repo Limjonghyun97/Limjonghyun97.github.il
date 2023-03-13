@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+#map {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1{
     font-family: 'Climate Crisis', cursive;
     margin: 30px;
@@ -15,10 +23,11 @@ h1{
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    min-width: 300px;
 }
 
 .search-box {
@@ -34,12 +43,14 @@ h1{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border: 1px solid royalblue;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .book-img{
-    width: 136px;
-    height: 200px;
+    width: 180px;
+    height: 300px;
+    border: 1px solid black;
 }
 
 h4 {
@@ -61,4 +72,24 @@ p{
 
 .sale {
     color: red;
+}
+
+.book-description {
+    width:300px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display:inline-block;
+}
+
+.moreBtn {
+    width: 100px;
+    height: 30px;
+    margin: 30px 0;
+    font-size: 18px;
+    color: royalblue;
+    background-color: inherit;
+    border: 1px solid royalblue;
+    border-radius: 20px;
+    cursor: pointer;
 }
