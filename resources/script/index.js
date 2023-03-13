@@ -53,7 +53,7 @@ function addProject(project, targetContainer, imageSize, imagePosition) {
     const description = document.createElement("h6");
     const skills = document.createElement("div");
     const period = document.createElement("span");
-    
+
     article.setAttribute("class", project.title);
     a.setAttribute("href", project.link);
     a.setAttribute("target", "_blank");
@@ -98,11 +98,22 @@ addProject(sample, "frontend", "cover", "center");
 
 const bookSearch = new Project(
     "/booksearch",
-    "https://em-content.zobj.net/thumbs/240/facebook/65/left-pointing-magnifying-glass_1f50d.png",
+    "/resources/images/booksearch.jpg",
     "Book Search",
     "Book Search and Inquiry Service",
     ['VanilaJS', 'jQeury', 'Kakao Search API'],
-    ['2023.03.13', "2023.03.13"]
+    ['2023.03.12', "2023.03.14"]
 );
 
 addProject(bookSearch, "frontend", "contain", "center");
+
+const omok = new Project(
+    "/omok",
+    "/resources/images/omok.png",
+    "omok",
+    "omok game",
+    ['VanilaJS', 'jQeury', 'Kakao Search API'],
+    ['2023.03.09', "2023.03.12"]
+);
+
+addProject(omok, "frontend", "contain", "center");
