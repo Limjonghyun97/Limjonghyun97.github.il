@@ -5,9 +5,23 @@ let click = 0; // === 100 && won === 0 draw
 
 const root = document.getElementById("root");
 const map = document.createElement("div");
+const map2 = document.createElement("div");
 map.setAttribute("class", "map");
+map2.setAttribute("class", "map2");
 
+setMap2();
 setMap();
+function setMap2() {
+    for (let i = 0; i < size + 1; i++) {
+        for (let j = 0; j < size + 1; j++) {
+            const item2 = document.createElement("div");
+            item2.setAttribute("class", "box2");
+
+            map2.append(item2);
+        }
+        root.append(map2);
+    }
+}
 
 function setMap() {
     for (let i = 0; i < size; i++) {
@@ -20,7 +34,7 @@ function setMap() {
             item.addEventListener("click", e => {
                 if (item.innerText === "") {
                     click++;
-                    item.innerText = (turn === 1 ? "O" : "X");
+                    item.innerText = (turn === 1 ? "○" : "●");
 
                     winCondition();
 
@@ -61,7 +75,7 @@ function checkrow() {
             const target = `y${i}x${j}`;
             const box = map.querySelector(`#${target}`);
             const text = box.innerText;
-            if (text === (turn === 1 ? "O" : "X")) {
+            if (text === (turn === 1 ? "○" : "●")) {
                 count++;
                 console.log("count : ", count);
             } else {
@@ -84,7 +98,7 @@ function checkcolumn() {
             const box = map.querySelector(`#${target}`);
             const text = box.innerText;
 
-            if (text === (turn === 1 ? "O" : "X")) {
+            if (text === (turn === 1 ? "○" : "●")) {
                 count++;
                 console.log("count : ", count);
             } else {
@@ -108,7 +122,7 @@ function checkdiagonal() {
                 const box = map.querySelector(`#${target}`);
                 const text = box.innerText;
 
-                if (text === (turn === 1 ? "O" : "X")) {
+                if (text === (turn === 1 ? "○" : "●")) {
                     count++;
                     console.log("count : ", count);
                 } else {
@@ -134,7 +148,7 @@ function checkreverse() {
                 const box = map.querySelector(`#${target}`);
                 const text = box.innerText;
 
-                if (text === (turn === 1 ? "O" : "X")) {
+                if (text === (turn === 1 ? "○" : "●")) {
                     count++;
                     console.log("count : ", count);
                 } else {
