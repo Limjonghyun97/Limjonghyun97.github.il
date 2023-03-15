@@ -99,7 +99,7 @@ addProject(sample, "frontend", "cover", "center");
 const omok = new Project(
     "/omok",
     "/resources/images/omok.jpg",
-    "omok",
+    "Omok",
     "JS, jQeury를 이용한 omok 게임",
     ['VanilaJS', 'jQeury', 'CSS', 'HTML'],
     ['2023.03.12', "2023.03.12"]
