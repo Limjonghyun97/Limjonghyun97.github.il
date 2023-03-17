@@ -96,6 +96,28 @@ const sample = new Project(
 addProject(sample, "frontend", "cover", "center");
 */
 
+const rpg = new Project(
+    "https://github.com/Limjonghyun97/rpg-game",
+    "/resources",
+    "RPG Game",
+    "eclips를 이용하여 console에서 RPG Game 기능을 구현한 미니 프로젝트",
+    ['Java'],
+    ['2023.03.17', "2023.03.17"]
+);
+
+addProject(rpg, "frontend", "contain", "center");
+
+const atm = new Project(
+    "https://github.com/Limjonghyun97/atm",
+    "/resources",
+    "ATM",
+    "eclips를 이용하여 console에서 ATM 기능을 구현한 미니 프로젝트",
+    ['Java'],
+    ['2023.03.15', "2023.03.15"]
+);
+
+addProject(atm, "frontend", "contain", "center");
+
 const omok = new Project(
     "/omok",
     "/resources/images/omok.jpg",
@@ -117,3 +139,14 @@ const bookSearch = new Project(
 );
 
 addProject(bookSearch, "frontend", "contain", "center");
+
+const todo = new Project(
+    "/todo",
+    "/resources",
+    "To Do List",
+    "VanilaJS, jQeury를 사용한 간단한 페이지",
+    ['VanilaJS'],
+    ['2023.03.16', "2023.03.16"]
+);
+
+addProject(todo, "frontend", "contain", "center");
