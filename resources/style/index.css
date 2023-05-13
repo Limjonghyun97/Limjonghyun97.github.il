@@ -10,7 +10,6 @@
 
 a {
     color: grey;
-    text-decoration: none;
 }
 
 .title > a {
@@ -29,7 +28,6 @@ a {
 
 h1{
     color: #49cc7b;
-    cursor: pointer;
 }
 
 .contents {
