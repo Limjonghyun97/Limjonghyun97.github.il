@@ -106,7 +106,7 @@ addProject(atm, "frontend", "contain", "center");
 
 const omok = new Project(
     "/omok",
-    "/resources/images/omok.jpg",
+    "/resources/images/omok.png",
     "Omok",
     "JS, jQeury를 이용한 omok 게임",
     ['VanilaJS', 'jQeury', 'CSS', 'HTML'],
@@ -128,7 +128,7 @@ addProject(bookSearch, "frontend", "contain", "center");
 
 const todo = new Project(
     "/todo",
-    "/resources",
+    "/resources/images/todo.png",
     "To Do List",
     "VanilaJS, jQeury를 사용한 간단한 페이지",
     ['VanilaJS'],
