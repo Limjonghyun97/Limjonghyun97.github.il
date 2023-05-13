@@ -82,25 +82,11 @@ function addProject(project, targetContainer, imageSize, imagePosition) {
     container.append(article);
 }
 
-// Projects 
-/*
-const sample = new Project(
-    "about:blank",
-    "/resources/images/yao.gif",
-    "sample",
-    "sample sample",
-    ['ReactJS','Typescript'],
-    ['2023.03.09', "2023.04.30"]
-);
-
-addProject(sample, "frontend", "cover", "center");
-*/
-
 const rpg = new Project(
     "https://github.com/Limjonghyun97/rpg-game",
-    "/resources",
+    "/resources/images/rpgGame.jpeg",
     "RPG Game",
-    "eclips를 이용하여 console에서 RPG Game 기능을 구현한 미니 프로젝트",
+    "console에서 RPG Game 기능을 구현한 미니 프로젝트",
     ['Java'],
     ['2023.03.17', "2023.03.17"]
 );
@@ -109,9 +95,9 @@ addProject(rpg, "frontend", "contain", "center");
 
 const atm = new Project(
     "https://github.com/Limjonghyun97/atm",
-    "/resources",
+    "/resources/images/atm.jpeg",
     "ATM",
-    "eclips를 이용하여 console에서 ATM 기능을 구현한 미니 프로젝트",
+    "console에서 ATM 기능을 구현한 미니 프로젝트",
     ['Java'],
     ['2023.03.15', "2023.03.15"]
 );

@@ -32,9 +32,9 @@ function setMap() {
             item.setAttribute("id", id);
 
             item.addEventListener("click", e => {
-                if (item.innerText === "") {
+                if (item.innerText === "" && win == 0) {
                     click++;
-                    item.innerText = (turn === 1 ? "○" : "●");
+                    item.innerText = (turn === 1 ? "⚪" : "⚫");
 
                     winCondition();
 
@@ -56,15 +56,10 @@ function winCondition() {
 
     if (win !== 0) {
         alert(`Player${win} WIN!!`);
-        reset();
     }
-
-    console.log("click : ", click);
-    console.log("win : ", win);
 
     if (win === 0 && click === size * size) {
         alert("DRAW !");
-        reset();
     }
 }
 
@@ -75,16 +70,14 @@ function checkrow() {
             const target = `y${i}x${j}`;
             const box = map.querySelector(`#${target}`);
             const text = box.innerText;
-            if (text === (turn === 1 ? "○" : "●")) {
+            if (text === (turn === 1 ? "⚪" : "⚫")) {
                 count++;
-                console.log("count : ", count);
             } else {
                 count = 0;
             }
 
             if (count == 5) {
                 win = turn;
-                console.log("win : ", win);
             }
         }
     }
@@ -98,16 +91,14 @@ function checkcolumn() {
             const box = map.querySelector(`#${target}`);
             const text = box.innerText;
 
-            if (text === (turn === 1 ? "○" : "●")) {
+            if (text === (turn === 1 ? "⚪" : "⚫")) {
                 count++;
-                console.log("count : ", count);
             } else {
                 count = 0;
             }
 
             if (count == 5) {
                 win = turn;
-                console.log("win : ", win);
             }
         }
     }
@@ -122,16 +113,14 @@ function checkdiagonal() {
                 const box = map.querySelector(`#${target}`);
                 const text = box.innerText;
 
-                if (text === (turn === 1 ? "○" : "●")) {
+                if (text === (turn === 1 ? "⚪" : "⚫")) {
                     count++;
-                    console.log("count : ", count);
                 } else {
                     count = 0;
                 }
 
                 if (count == 5) {
                     win = turn;
-                    console.log("win : ", win);
                 }
             }
         }
@@ -144,20 +133,17 @@ function checkreverse() {
             let count = 0;
             for (let k = 0; k < 5; k++) {
                 const target = `y${j + k}x${i - k}`;
-                console.log(target);
                 const box = map.querySelector(`#${target}`);
                 const text = box.innerText;
 
-                if (text === (turn === 1 ? "○" : "●")) {
+                if (text === (turn === 1 ? "⚪" : "⚫")) {
                     count++;
-                    console.log("count : ", count);
                 } else {
                     count = 0;
                 }
 
                 if (count == 5) {
                     win = turn;
-                    console.log("win : ", win);
                 }
             }
         }
