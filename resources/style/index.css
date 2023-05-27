@@ -237,3 +237,7 @@ address {
         height: 70vw;
     }
 }
+
+.projectsInfo {
+    z-index: 1000;
+}
