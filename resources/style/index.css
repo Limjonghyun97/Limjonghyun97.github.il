@@ -238,6 +238,43 @@ address {
     }
 }
 
-.projectsInfo {
-    z-index: 1000;
+.projectInfo {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.projectInfoText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+    color: white;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+.projectInfoText > a {
+    text-decoration: none;
+}
+
+.projectInfoText > a > h4 {
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+.projectInfoText > a > p {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.projectInfoText > a > img {
+    width: 40%;
 }

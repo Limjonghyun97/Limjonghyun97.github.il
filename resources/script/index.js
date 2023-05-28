@@ -55,8 +55,8 @@ function addProject(project, targetContainer, imageSize, imagePosition) {
     const period = document.createElement("span");
 
     article.setAttribute("class", project.title);
-    a.setAttribute("href", project.link);
     a.setAttribute("target", "_blank");
+    a.setAttribute("onclick", `${project.title}()`)
     projectImg.setAttribute("class", "project-img");
     projectImg.setAttribute("style", `background: no-repeat ${imagePosition} url('${project.imageUrl}'); background-size: ${imageSize}`);
     title.setAttribute("class", "title");
@@ -85,7 +85,7 @@ function addProject(project, targetContainer, imageSize, imagePosition) {
 const rpg = new Project(
     "https://github.com/Limjonghyun97/rpg-game",
     "/resources/images/rpgGame.jpeg",
-    "RPG Game",
+    "RPG_Game",
     "console에서 RPG Game 기능을 구현한 미니 프로젝트",
     ['Java'],
     ['2023.03.17', "2023.03.17"]
@@ -118,7 +118,7 @@ addProject(omok, "frontend", "contain", "center");
 const bookSearch = new Project(
     "/booksearch",
     "/resources/images/booksearch.jpg",
-    "Book Search",
+    "Book_Search",
     "카카오 Search API를 이용한 책 찾는 웹페이지",
     ['VanilaJS', 'jQeury', 'Kakao Search API'],
     ['2023.03.14', "2023.03.14"]
@@ -129,7 +129,7 @@ addProject(bookSearch, "frontend", "contain", "center");
 const todo = new Project(
     "/todo",
     "/resources/images/todo.png",
-    "To Do List",
+    "To_Do_List",
     "VanilaJS, jQeury를 사용한 간단한 페이지",
     ['VanilaJS'],
     ['2023.03.16', "2023.03.16"]
